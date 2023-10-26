@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>
+            CodesTut
+        </title>
+        <link rel="stylesheet" href="newpage.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css? family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+      <div class="hero">
+        
+                <div class="btn-box">
+                    <button id="btn1" onclick="openHTML()"> <i class="fa fa-html5"></i>HTML </button>
+                    <button id="btn2" onclick="openCSS()"> <i class="fa fa-css3"></i>CSS</button>
+                    <button id="btn3" onclick="openJAVASCRIPT()"> <i class="fa fa-codepen"></i> JAVASCRIPT </button> 
+                </div>
+              
+                <div id="content1" class="content">
+                    <div class="content-left">
+                        <h1>
+                            Learn HTML
+                        </h1>
+                        <p> HTML, or Hypertext Markup Language, is the standard language used to create and structure content on the World Wide Web. It is the backbone of web pages and is essential for building websites. HTML uses a system of tags to define elements such as text, images, links, and multimedia, allowing web browsers to render and display these elements to users. HTML documents consist of a series of nested tags that provide structure and formatting to web content, making it accessible and user-friendly. It is the foundation of web development and is often used in conjunction with other technologies like CSS (Cascading Style Sheets) and JavaScript to create interactive and visually appealing websites.</p>
+                        <button> <a href="html.html">WATCH HTML VIDEO</a> </button> 
+                    </div>
+                    <div class="content-right">
+                        <img src="images/html.jpg">
+                    </div>
+                </div> 
+                <div id="content2" class="content">
+                    <div class="content-left">
+                        <h1>
+                            Learn CSS
+                        </h1>
+                        <p> CSS, or Cascading Style Sheets, is a style sheet language used in web development to control the presentation and layout of web content written in HTML and XML. It enables web designers and developers to define the visual appearance of web pages, including aspects like fonts, colors, spacing, positioning, and responsiveness. CSS separates the structure (HTML) of a web page from its visual design, making it easier to maintain and update websites. By applying CSS rules to HTML elements, designers can create visually appealing and consistent web pages across different devices and screen sizes. CSS also allows for responsive design, adapting the layout to fit various screen sizes and orientations, ensuring a better user experience on both desktop and mobile devices.</p>
+                        <button> <a href="css.html">WATCH CSS VIDEO</a> </button> 
+                    </div>
+                    <div  class="content-right">
+                        <img src="images/css.jpg">
+                    </div>
+                </div>  
+                <div id="content3" class="content">
+                    <div class="content-left">
+                        <h1>
+                            Learn JAVASCRIPT
+                        </h1>
+                        <p> JavaScript is a versatile and widely used programming language that is primarily employed for web development. It enables interactive and dynamic functionality in web pages, making them responsive and engaging. JavaScript can be used to manipulate the Document Object Model (DOM), which represents the structure and content of web pages, allowing developers to create interactive features, validate forms, fetch data from servers, and more. It's executed directly in web browsers, enhancing user experiences by enabling real-time updates without the need for page reloads. Beyond web development, JavaScript is also used in server-side development (Node.js), game development, and a wide range of other applications.</p>
+                        <button> <a href="js.html">WATCH JAVASCRIPT VIDEO</a> </button> 
+                    </div>
+                    <div class="content-right">
+                        <img src="images/javascript.jpg">
+                    </div>
+                </div> 
+        </div>
+        <script>
+            var content1 = document.getElementById("content1");
+            var content1 = document.getElementById("content1");
+            var content1 = document.getElementById("content1");
+            var btn1 = document.getElementById("btn1");
+            var btn2 = document.getElementById("btn2");
+            var btn3=  document.getElementById("btn3");
+
+            function openHTML(){
+    content1.style.transform = "translateX(0)";
+    content2.style.transform = "translateX(100%)";
+    content3.style.transform = "translateX(100%)";
+    // Reset text color for all buttons
+    btn1.style.color = "#ff7846";
+    btn2.style.color = "#fff";
+    btn3.style.color = "#fff";
+    
+    content1.style.transitionDelay = "0.3s";
+    content2.style.transitionDelay = "0s";
+    content3.style.transitionDelay = "0s";
+}
+// Similar changes for openCSS and openJAVASCRIPT functions...
+
+            function openCSS(){
+                content1.style.transform = "translateX(100%)";
+                content2.style.transform = "translateX(0)";
+                content3.style.transform = "translateX(100%)";
+                btn2.style.color="#ff7846";
+                btn1.style.color="#fff";
+                btn3.style.color="#fff";
+                content1.style.transitionDelay = "0s";
+                content2.style.transitionDelay = "0.3s";
+                content3.style.transitionDelay = "0s";
+            }
+            function openJAVASCRIPT(){
+                content1.style.transform = "translateX(100%)";
+                content2.style.transform = "translateX(100%)";
+                content3.style.transform = "translateX(0)";
+                btn3.style.color="#ff7846";
+                btn2.style.color="#fff";
+                btn1.style.color="#fff"; 
+                content1.style.transitionDelay = "0s";
+                content2.style.transitionDelay = "0s";
+                content3.style.transitionDelay = "0.3s";           
+            }
+
+        </script>
+     
+
+
+
+    </body>
+</html>
